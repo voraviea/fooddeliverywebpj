@@ -113,7 +113,7 @@ function App() {
         </div>
         <div className='flex gap-[12px]'>
           <p className='text-[#045EEE] px-[9.5px] py-[5px] rounded-[8px] border h-fit font-medium'>1x</p>
-          <div className='flex flex-col'>
+          <div className='flex flex-col flex-1'>
             <p className='text-[22px] font-medium'>ชาองุ่นปั่นสด</p>
             <p className='text-[20px] text-[#676767]'>หวาน 100%</p>
             <p className='text-[20px] text-[#676767]'>เนื้อองุ่น 90 กรัม Fresh Peeled Grapes</p>
