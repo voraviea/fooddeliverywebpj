@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/voraviea/fooddeliverywebpj/static/css/main.c5da695f.css",
+    "main.js": "/voraviea/fooddeliverywebpj/static/js/main.471ced82.js",
+    "static/media/DB Heavent Bd v3.2.1.ttf": "/voraviea/fooddeliverywebpj/static/media/DB Heavent Bd v3.2.1.08dacd2b648c41eb16de.ttf",
+    "static/media/DB Heavent Med v3.2.1.ttf": "/voraviea/fooddeliverywebpj/static/media/DB Heavent Med v3.2.1.12694ca4721f45ba41ba.ttf",
+    "static/media/DB Heavent v3.2.1.ttf": "/voraviea/fooddeliverywebpj/static/media/DB Heavent v3.2.1.3d21cc503fc37885c3d8.ttf",
+    "static/media/normal-image.png": "/voraviea/fooddeliverywebpj/static/media/normal-image.b0f3e52703bef3e0857d.png",
+    "static/media/yes-image.png": "/voraviea/fooddeliverywebpj/static/media/yes-image.0080b6c737fa682abcc9.png",
+    "static/media/no-image.png": "/voraviea/fooddeliverywebpj/static/media/no-image.84ec619b6ba7f0a3c145.png",
+    "index.html": "/voraviea/fooddeliverywebpj/index.html",
+    "main.c5da695f.css.map": "/voraviea/fooddeliverywebpj/static/css/main.c5da695f.css.map",
+    "main.471ced82.js.map": "/voraviea/fooddeliverywebpj/static/js/main.471ced82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5da695f.css",
+    "static/js/main.471ced82.js"
+  ]
+}
