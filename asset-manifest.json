@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fooddeliverywebpj/static/css/main.6d2f2b82.css",
-    "main.js": "/fooddeliverywebpj/static/js/main.df8d862a.js",
+    "main.js": "/fooddeliverywebpj/static/js/main.22f44ea9.js",
     "static/media/DB Heavent Bd v3.2.1.ttf": "/fooddeliverywebpj/static/media/DB Heavent Bd v3.2.1.08dacd2b648c41eb16de.ttf",
     "static/media/DB Heavent Med v3.2.1.ttf": "/fooddeliverywebpj/static/media/DB Heavent Med v3.2.1.12694ca4721f45ba41ba.ttf",
     "static/media/DB Heavent v3.2.1.ttf": "/fooddeliverywebpj/static/media/DB Heavent v3.2.1.3d21cc503fc37885c3d8.ttf",
@@ -10,10 +10,10 @@
     "static/media/no-image.png": "/fooddeliverywebpj/static/media/no-image.84ec619b6ba7f0a3c145.png",
     "index.html": "/fooddeliverywebpj/index.html",
     "main.6d2f2b82.css.map": "/fooddeliverywebpj/static/css/main.6d2f2b82.css.map",
-    "main.df8d862a.js.map": "/fooddeliverywebpj/static/js/main.df8d862a.js.map"
+    "main.22f44ea9.js.map": "/fooddeliverywebpj/static/js/main.22f44ea9.js.map"
   },
   "entrypoints": [
     "static/css/main.6d2f2b82.css",
-    "static/js/main.df8d862a.js"
+    "static/js/main.22f44ea9.js"
   ]
 }
