@@ -38,6 +38,10 @@ function App() {
     setSelectedYesNo(type);
   };
 
+  const handleSubmit = () => {
+    window.location.href = process.env.REACT_APP_SURVEY_URL + `&surveyType=${randomType}&requestPlasticSpoon=${selectedYesNo}`;
+  }
+
   return (
     <div className='flex flex-col gap-[12px] max-w-[450px] min-h-screen mx-auto bg-[#F5F5F5]'>
       <div className='relative p-[15px] bg-white flex items-center'>
@@ -173,7 +177,7 @@ function App() {
           <p className='text-[22px]'>Delivery fee</p>
           <p className='text-[26px] font-bold'>฿190</p>
         </div>
-        <button className='text-[24px] bg-[#58BC6B] py-[9.5px] text-white rounded-[8px] w-full text-center font-bold'>Place Order</button>
+        <button className='text-[24px] bg-[#58BC6B] py-[9.5px] text-white rounded-[8px] w-full text-center font-bold' onClick={handleSubmit}>Place Order</button>
       </div>
     </div>
   );

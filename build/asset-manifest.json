@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.b58ea1a0.css",
-    "main.js": "/static/js/main.5a0173a6.js",
-    "static/media/DB Heavent Bd v3.2.1.ttf": "/static/media/DB Heavent Bd v3.2.1.08dacd2b648c41eb16de.ttf",
-    "static/media/DB Heavent Med v3.2.1.ttf": "/static/media/DB Heavent Med v3.2.1.12694ca4721f45ba41ba.ttf",
-    "static/media/DB Heavent v3.2.1.ttf": "/static/media/DB Heavent v3.2.1.3d21cc503fc37885c3d8.ttf",
-    "static/media/normal-image.png": "/static/media/normal-image.b0f3e52703bef3e0857d.png",
-    "static/media/yes-image.png": "/static/media/yes-image.0080b6c737fa682abcc9.png",
-    "static/media/no-image.png": "/static/media/no-image.84ec619b6ba7f0a3c145.png",
-    "index.html": "/index.html",
-    "main.b58ea1a0.css.map": "/static/css/main.b58ea1a0.css.map",
-    "main.5a0173a6.js.map": "/static/js/main.5a0173a6.js.map"
+    "main.css": "/fooddeliverywebpj/static/css/main.6d2f2b82.css",
+    "main.js": "/fooddeliverywebpj/static/js/main.df8d862a.js",
+    "static/media/DB Heavent Bd v3.2.1.ttf": "/fooddeliverywebpj/static/media/DB Heavent Bd v3.2.1.08dacd2b648c41eb16de.ttf",
+    "static/media/DB Heavent Med v3.2.1.ttf": "/fooddeliverywebpj/static/media/DB Heavent Med v3.2.1.12694ca4721f45ba41ba.ttf",
+    "static/media/DB Heavent v3.2.1.ttf": "/fooddeliverywebpj/static/media/DB Heavent v3.2.1.3d21cc503fc37885c3d8.ttf",
+    "static/media/normal-image.png": "/fooddeliverywebpj/static/media/normal-image.b0f3e52703bef3e0857d.png",
+    "static/media/yes-image.png": "/fooddeliverywebpj/static/media/yes-image.0080b6c737fa682abcc9.png",
+    "static/media/no-image.png": "/fooddeliverywebpj/static/media/no-image.84ec619b6ba7f0a3c145.png",
+    "index.html": "/fooddeliverywebpj/index.html",
+    "main.6d2f2b82.css.map": "/fooddeliverywebpj/static/css/main.6d2f2b82.css.map",
+    "main.df8d862a.js.map": "/fooddeliverywebpj/static/js/main.df8d862a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b58ea1a0.css",
-    "static/js/main.5a0173a6.js"
+    "static/css/main.6d2f2b82.css",
+    "static/js/main.df8d862a.js"
   ]
 }
