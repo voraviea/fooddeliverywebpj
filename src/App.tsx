@@ -39,7 +39,7 @@ function App() {
   };
 
   const handleSubmit = () => {
-    window.location.href = process.env.REACT_APP_SURVEY_URL + `&surveyType=${randomType}&requestPlasticSpoon=${selectedYesNo}`;
+    window.location.href = process.env.REACT_APP_SURVEY_URL + `?surveyType=${randomType}&requestPlasticSpoon=${selectedYesNo}`;
   }
 
   return (
