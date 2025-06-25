@@ -1,0 +1,16 @@
+name: Random Distribution Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-random-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Run Random-Test Script
+        run: node src/random-test.js
