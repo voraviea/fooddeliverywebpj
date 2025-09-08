@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fooddeliverywebpj/static/css/main.6d2f2b82.css",
-    "main.js": "/fooddeliverywebpj/static/js/main.99bbf265.js",
+    "main.css": "/fooddeliverywebpj/static/css/main.7a2f06aa.css",
+    "main.js": "/fooddeliverywebpj/static/js/main.45272dab.js",
     "static/media/yes-animate.gif": "/fooddeliverywebpj/static/media/yes-animate.f181cb5ea99f3dabbad4.gif",
     "static/media/no-animate.gif": "/fooddeliverywebpj/static/media/no-animate.ecbe175dda8311e1806a.gif",
     "static/media/normal-animate.gif": "/fooddeliverywebpj/static/media/normal-animate.5e3c070b52df878be85e.gif",
@@ -12,11 +12,11 @@
     "static/media/DB Heavent v3.2.1.ttf": "/fooddeliverywebpj/static/media/DB Heavent v3.2.1.3d21cc503fc37885c3d8.ttf",
     "static/media/no-static.jpg": "/fooddeliverywebpj/static/media/no-static.fa416f89508633cdd550.jpg",
     "index.html": "/fooddeliverywebpj/index.html",
-    "main.6d2f2b82.css.map": "/fooddeliverywebpj/static/css/main.6d2f2b82.css.map",
-    "main.99bbf265.js.map": "/fooddeliverywebpj/static/js/main.99bbf265.js.map"
+    "main.7a2f06aa.css.map": "/fooddeliverywebpj/static/css/main.7a2f06aa.css.map",
+    "main.45272dab.js.map": "/fooddeliverywebpj/static/js/main.45272dab.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d2f2b82.css",
-    "static/js/main.99bbf265.js"
+    "static/css/main.7a2f06aa.css",
+    "static/js/main.45272dab.js"
   ]
 }
