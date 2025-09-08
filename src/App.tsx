@@ -11,13 +11,19 @@ import discountIcon from './assets/discount-icon.png';
 import DeliveryOptionItem, { DeliveryOptionType } from './components/DeliveryOptionItem';
 import YesNoOptionItem, { YesNoType } from './components/YesNoOptionItem';
 import YesNoImage from './components/YesNoImage';
+import ConsentForm from './components/ConsentForm';
+import InstructionPage from './components/InstructionPage';
 import { useEffect, useState } from 'react';
 
+type AppPage = 'consent' | 'instructions' | 'survey';
+
 function App() {
+  const [currentPage, setCurrentPage] = useState<AppPage>('consent');
   const [randomType, setRandomType] = useState<string | null>(null);
   const [selectedDeliveryType, setSelectedDeliveryType] = useState<DeliveryType>('Delivery');
   const [selectedDeliveryOption, setSelectedDeliveryOption] = useState<DeliveryOptionType>('Priority');
   const [selectedYesNo, setSelectedYesNo] = useState<YesNoType | null>(null);
+  const [showValidationError, setShowValidationError] = useState<boolean>(false);
 
   useEffect(() => {
     const options = ['A', 'B', 'C', 'D'];
@@ -36,10 +42,36 @@ function App() {
 
   const handleYesNoSelect = (type: YesNoType) => {
     setSelectedYesNo(type);
+    setShowValidationError(false); // Clear validation error when user selects an option
+  };
+
+  const handleConsentResponse = (response: YesNoType) => {
+    if (response === 'no') {
+      window.location.href = process.env.REACT_APP_SURVEY_URL + '?consent=no';
+    } else {
+      setCurrentPage('instructions');
+    }
+  };
+
+  const handleInstructionsContinue = () => {
+    setCurrentPage('survey');
   };
 
   const handleSubmit = () => {
-    window.location.href = process.env.REACT_APP_SURVEY_URL + `?surveyType=${randomType}&requestPlasticSpoon=${selectedYesNo}`;
+    if (selectedYesNo === null) {
+      setShowValidationError(true);
+      alert('กรุณาเลือกคำตอบสำหรับ "ต้องการรับช้อนซ้อมพลาสติกหรือไม่"');
+      return;
+    }
+    window.location.href = process.env.REACT_APP_SURVEY_URL + `?surveyType=${randomType}&requestPlasticSpoon=${selectedYesNo}&consent=yes`;
+  }
+
+  if (currentPage === 'consent') {
+    return <ConsentForm onConsentResponse={handleConsentResponse} />;
+  }
+
+  if (currentPage === 'instructions') {
+    return <InstructionPage onContinue={handleInstructionsContinue} />;
   }
 
   return (
@@ -137,9 +169,9 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='flex flex-col gap-[16px] px-[15px] py-[12px] bg-white'>
+      <div className={`flex flex-col gap-[16px] px-[15px] py-[12px] bg-white`}>
         <p className='text-[26px] font-bold'>Eco-friendly options</p>
-        <p>ต้องการรับช้อนซ้อมพลาสติกหรือไม่</p>
+        <p>ต้องการรับช้อนซ้อมพลาสติกหรือไม่ <span className='text-red-500'>*</span></p>
         <div className='flex gap-[16px] items-center'>
           <YesNoImage selectedOption={selectedYesNo} randomType={randomType} />
           <div className='flex flex-col gap-[16px] flex-1'>
@@ -148,15 +180,20 @@ function App() {
               icon={yesIcon}
               isSelected={selectedYesNo === 'yes'}
               onSelect={handleYesNoSelect}
+              text='yes'
             />
             <YesNoOptionItem
               type="no"
               icon={noIcon}
               isSelected={selectedYesNo === 'no'}
               onSelect={handleYesNoSelect}
+              text='no'
             />
           </div>
         </div>
+        {showValidationError && (
+          <p className='text-red-500 text-[20px] mt-1'>กรุณาเลือกคำตอบ</p>
+        )}
       </div>
       <div className='flex flex-col gap-[16px] px-[15px] py-[12px] bg-white'>
         <p className='text-[26px] font-bold'>Payment details</p>

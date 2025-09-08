@@ -7,6 +7,7 @@ interface YesNoOptionItemProps {
   icon: string; // URL to either an image or GIF file
   isSelected: boolean;
   onSelect: (type: YesNoType) => void;
+  text: string;
 }
 
 const YesNoOptionItem: React.FC<YesNoOptionItemProps> = ({
@@ -14,6 +15,7 @@ const YesNoOptionItem: React.FC<YesNoOptionItemProps> = ({
   icon,
   isSelected,
   onSelect,
+  text,
 }) => {
   return (
     <div
@@ -27,7 +29,7 @@ const YesNoOptionItem: React.FC<YesNoOptionItemProps> = ({
         alt={`${type} icon`} 
         className='w-[24px] h-[24px] object-contain' 
       />
-      <p className='text-[22px]'>{type === 'yes' ? 'Yes' : 'No'}</p>
+      <p className='text-[22px]'>{text}</p>
     </div>
   );
 };
