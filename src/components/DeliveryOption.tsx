@@ -5,14 +5,12 @@ export type DeliveryType = 'Delivery' | 'Pickup';
 interface DeliveryOptionProps {
   type: DeliveryType;
   isSelected: boolean;
-  onOptionChange: (option: DeliveryType) => void;
 }
 
-const DeliveryOption: React.FC<DeliveryOptionProps> = ({ type, isSelected, onOptionChange }) => {
+const DeliveryOption: React.FC<DeliveryOptionProps> = ({ type, isSelected }) => {
   return (
     <div className='flex gap-[15px] items-center'>
-      <button
-        onClick={() => onOptionChange(type)}
+      <div
         className={`text-[24px] py-[4px] px-[12px] rounded-[40px] transition-colors ${
           isSelected
             ? 'text-[#58BC6B] bg-[#F5F5F5] font-medium'
@@ -20,7 +18,7 @@ const DeliveryOption: React.FC<DeliveryOptionProps> = ({ type, isSelected, onOpt
         }`}
       >
         {type}
-      </button>
+      </div>
     </div>
   );
 };
