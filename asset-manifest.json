@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/fooddeliverywebpj/static/css/main.7a2f06aa.css",
-    "main.js": "/fooddeliverywebpj/static/js/main.7c2fa4e4.js",
+    "main.js": "/fooddeliverywebpj/static/js/main.5c2e1a63.js",
     "static/media/yes-animate.gif": "/fooddeliverywebpj/static/media/yes-animate.f181cb5ea99f3dabbad4.gif",
     "static/media/no-animate.gif": "/fooddeliverywebpj/static/media/no-animate.ecbe175dda8311e1806a.gif",
     "static/media/normal-animate.gif": "/fooddeliverywebpj/static/media/normal-animate.5e3c070b52df878be85e.gif",
-    "static/media/normal-static.png": "/fooddeliverywebpj/static/media/normal-static.a61d05ad44c9e30e2597.png",
+    "static/media/normal-static.png": "/fooddeliverywebpj/static/media/normal-static.0dfaa9b33d7685c61fc0.png",
     "static/media/yes-static.jpg": "/fooddeliverywebpj/static/media/yes-static.1a973e846f60f7778bf4.jpg",
     "static/media/DB Heavent Bd v3.2.1.ttf": "/fooddeliverywebpj/static/media/DB Heavent Bd v3.2.1.08dacd2b648c41eb16de.ttf",
     "static/media/DB Heavent Med v3.2.1.ttf": "/fooddeliverywebpj/static/media/DB Heavent Med v3.2.1.12694ca4721f45ba41ba.ttf",
@@ -13,10 +13,10 @@
     "static/media/no-static.jpg": "/fooddeliverywebpj/static/media/no-static.fa416f89508633cdd550.jpg",
     "index.html": "/fooddeliverywebpj/index.html",
     "main.7a2f06aa.css.map": "/fooddeliverywebpj/static/css/main.7a2f06aa.css.map",
-    "main.7c2fa4e4.js.map": "/fooddeliverywebpj/static/js/main.7c2fa4e4.js.map"
+    "main.5c2e1a63.js.map": "/fooddeliverywebpj/static/js/main.5c2e1a63.js.map"
   },
   "entrypoints": [
     "static/css/main.7a2f06aa.css",
-    "static/js/main.7c2fa4e4.js"
+    "static/js/main.5c2e1a63.js"
   ]
 }
